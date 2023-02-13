@@ -28,25 +28,40 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BusinessCard(){
-    Surface(color = Color(0xFF073042)) {
-        Column(
-            horizontalAlignment = Alignment.CenterHorizontally,
-            modifier = Modifier
-                .border(1.dp, Color.Blue, RectangleShape)
-                .fillMaxWidth()
-                .padding(20.dp)
-        ) {
-            Text(text = "android", fontSize = 15.sp, color = Color.White)
-            Text(text = "Jomo Brain", color = Color.White)
-            Text(text = "Android Developer Card",fontSize = 9.sp,color = Color(0xFF2EAC72))
-            Spacer(modifier = Modifier.height(40.dp))
-            Divider(color = Color.Gray, thickness = 1.dp)
-            Row {
-                Text("icon",fontSize = 13.sp,color = Color.White)
+    Surface(color = Color(0XFF08072f)) {
+        Column(horizontalAlignment = Alignment.CenterHorizontally,
+                      modifier = Modifier
+                          .border(1.dp, Color.Blue, RectangleShape)
+                          .fillMaxWidth()
+                          .padding(30.dp)
+            ) {
+            Text(
+                text = "android",
+                fontSize = 12.sp,
+                color = Color.White
+            )
+            Text(
+                text = "Musango Brian",
+                color = Color.White
+            )
+            Text(
+                text = "Android Developer",
+                color = Color(0XFF399212),
+                fontSize = 8.sp
+            )
+            Spacer(modifier = Modifier.width(40.dp))
+            Divider(color = Color.Gray,thickness = 2.dp)
+            Row{
+                Text ("It is my phone no.",
+                      color = Color.White,
+                    fontSize = 7.5.sp)
                 Spacer(modifier = Modifier.width(20.dp))
-                Text(text = "+11 (123) 444 555  666", color = Color.White)
-            }
+                Text (text = "+254115815528",
+                    color = Color.White,
+                    fontSize = 7.5.sp
+                    )
 
+            }
         }
     }
 }
