@@ -5,4 +5,4 @@
 <img src="./images/rolerDice.png">
 
 - Tip Timer
-<img src = "./images/Tip Calculator.png">
+<img src = "./images/Tip Calculator.jpg">
